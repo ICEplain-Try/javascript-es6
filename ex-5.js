@@ -1,5 +1,6 @@
-function sum() {
-  // Start coding here !
+function sum(...numbers) {
+  // ใช้ reduce method เพื่อคำนวณผลรวม
+  return numbers.reduce((total, num) => total + num, 0);
 }
 
 let result1 = sum(1, 2, 3, 4, 5, 6, 7, 8);
